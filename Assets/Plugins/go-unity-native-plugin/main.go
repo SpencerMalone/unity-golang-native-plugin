@@ -46,7 +46,7 @@ func SlowSquares(vals []int) *C.char {
 		res := val * val
         results = results + fmt.Sprintf("%d squared is %d\n", val, res)
 	}
-
+	fmt.Println("helo")
 	cres := C.CString(results)
 	// defer C.free(unsafe.Pointer(cres))
 	return cres
@@ -62,6 +62,6 @@ func Log(msg string) int {
 }
 
 func main() {
-	fmt.Println(Squares([]int{1, 3}))
-	fmt.Println(SlowSquares([]int{1, 3}))
+	// fmt.Println(Squares([]int{1, 3}))
+	// fmt.Println(SlowSquares([]int{1, 3}))
 }
