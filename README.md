@@ -17,3 +17,7 @@ If you were writing a golang service for a game to consume, there can be value i
 ## How to iterate
 
 Sadly, rebuilds require a restart of the unity client. There are some solutions which offer fixes to this, but I found if you mess up return values, it's easy to deadlock Unity if using something like https://github.com/mcpiroman/UnityNativeTool
+
+## Other resources
+
+https://github.com/vladimirvivien/go-cshared-examples is a good read on this subject
